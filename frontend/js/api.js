@@ -1,4 +1,4 @@
-const API_BASE = "/api/students";
+const API_BASE = "http://localhost:3000/api/students";
 
 async function handleResponse(res) {
   const data = await res.json().catch(() => ({}));

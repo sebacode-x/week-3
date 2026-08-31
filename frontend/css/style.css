@@ -181,3 +181,21 @@ table.register td a { margin-right: 0.75rem; }
   border-top: 1px solid var(--border);
   margin-top: 3rem;
 }
+/* ---------- Profile view (student dashboard) ---------- */
+.profile-list { list-style: none; margin: 1.5rem 0; padding: 0; display: grid; gap: 0.9rem; }
+.profile-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0.9rem;
+  background: var(--bg-panel-alt);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.profile-list .label {
+  color: var(--cream-dim);
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+.profile-list .value { color: var(--cream); font-weight: bold; }
+.auth-links { text-align: center; margin-top: 1rem; color: var(--cream-dim); font-size: 0.9rem; }

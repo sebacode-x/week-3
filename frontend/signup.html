@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - Iyunga Secondary School</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="css/image/logo.svg" alt="Iyunga Secondary School logo" />
+      <span>Iyunga Secondary School</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Log In</a>
+      <a href="signup.html" class="active">Sign Up</a>
+    </nav>
+  </header>
+  <main>
+    <section class="panel">
+      <h1>Create Your Student Account</h1>
+      <form id="signupForm" class="ledger-form">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" name="password" minlength="6" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+      <p id="formMessage" class="form-message"></p>
+      <p class="auth-links">Already have an account? <a href="login.html">Log in</a></p>
+    </section>
+  </main>
+  <footer class="site-footer">&copy; 2026 Iyunga Secondary School - Student Portal</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>
