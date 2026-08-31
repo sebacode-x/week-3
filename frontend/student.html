@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Students Register - Iyunga Secondary School</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Iyunga Secondary School logo" />
+      <span>Iyunga Secondary School</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="student.html" class="active">Students</a>
+      <a href="add-student.html">Add Student</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="panel">
+      <div class="toolbar">
+        <h2 style="margin:0;">Students Register</h2>
+        <a class="btn btn-primary" href="add-student.html">+ Add Student</a>
+      </div>
+
+      <div class="table-wrap">
+        <table class="register">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Admission No.</th>
+              <th>Class</th>
+              <th>Gender</th>
+              <th>Age</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <!-- js/students-list.js fills this in from the backend API -->
+          <tbody id="studentsTableBody">
+            <tr><td colspan="7">Loading students...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; 2026 Iyunga Secondary School - Student Management System
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/students-list.js"></script>
+</body>
+</html>
